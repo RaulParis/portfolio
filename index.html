@@ -76,12 +76,14 @@
             }
         }
         .project-item {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
+            justify-content: center;
         }
         .project-image {
             width: 100%;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0,0,0,.1);
+            max-width: 400px; /* Maximum width of the image */
+            max-height: 400px; /* Maximum height of the image */
+            border-radius: 10px; /* Rounded corners of the image */
         }
         .project-description {
             display: flex;
@@ -223,6 +225,20 @@
             margin-right: 20px; /* Adjust as needed */
             display: inline-block;
         }
+        .blue-text {
+            color: #69b3a2;
+            font-weight: bold;
+        }
+        #particles-js{
+          width: 100%;
+          height: 0px;
+          background-color: white;
+          background-image: url('');
+          background-size: cover;
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+        }
+
     </style>
 </head>
 <body>
@@ -247,34 +263,40 @@
 <section id="intro" class="intro-section">
     <div class="container">
         <h1 style="color:white;">Raul Paris Murillo</h1>
-        <p>Passionate Data Scientist | Machine Learning Innovator | Data Driven Decision Maker</p>
+        <p>Data Scientist | Co-Founder of Menosdeluz | NOVA Talent Member</p>
     </div>
 </section>
-
+<div id="particles-js"></div>
 <section id="projects">
+
     <div class="container">
         <h2 class="text-center">Projects</h2>
 
         <div class="row project-item">
             <div class="col-md-6 project-image">
-                <img src="dummy.jpg" alt="Project 1" class="img-fluid">
+                <a href="https://www.menosdeluz.com">
+                    <img src="menosdeluz.webp" alt="Menosdeluz" class="img-fluid">
+                </a>
             </div>
             <div class="col-md-6 project-description">
                 <div class="project-text">
-                    <h3>Project Title 1</h3>
-                    <p>Short description of the project, the technologies used, and the outcome.</p>
+                    <h3>Menosdeluz.com (Full stack development)</h3>
+                    <p>Developed the web app using <span class="blue-text">Python (Django) </span>, <span class="blue-text">MySQL</span>, <span class="blue-text">JavaScript</span> and <span class="blue-text">Azure</span> hosting. Utilized <span class="blue-text">Git</span> for continuous development and A/B testing for data-driven decision-making.
+                    </p>
                 </div>
             </div>
         </div>
 
         <div class="row project-item project-even">
             <div class="col-md-6 project-image">
-                <img src="dummy.jpg" alt="Project 2" class="img-fluid">
+                <a href="https://www.kaggle.com/code/raulparis/spaceship-titanic-81-easy-to-understand/notebook">
+                    <img src="spaceship_titanic.webp" alt="Spaceship Titanic Kaggle Classification" class="img-fluid">
+                </a>
             </div>
             <div class="col-md-6 project-description">
                 <div class="project-text">
-                    <h3>Project Title 2</h3>
-                    <p>Another description of a different project, highlighting unique challenges and solutions.</p>
+                    <h3>Kaggle Spaceship Titanic Classification</h3>
+                    <p><span class="blue-text">Machine Learning classification </span>problem. Performed EDA, Feature Engineering, development of ML models to predict alive people.</p>
                 </div>
             </div>
         </div>
@@ -298,12 +320,12 @@
     <div class="about-section">
         <div class="about-header">
             <h2 class="about-title">About me</h2>
-            <img src="raul.jpg" alt="Your Name" class="about-image">
+            <img src="raul.jpg" alt="Raul Paris" class="about-image">
         </div>
         <p class="about-text">
             Hello! 👋😊
             <br>
-            I'm Alberto, a 26-year-old Data Scientist who is passionate about harnessing the power of data and AI to derive meaningful insights for businesses and contribute to a better world through innovative technologies.
+            I'm Raul Paris, a 26-year-old Data Scientist who is passionate about harnessing the power of data and AI to derive meaningful insights for businesses and contribute to a better world through innovative technologies.
             <br>
             I hold a Bachelor's degree in Mathematics and a Master's degree in Data Science. Throughout my professional career, I have had the privilege of working with some of the largest financial and technology consultancies globally. I have applied my expertise in Data Science and Data Analytics to assist clients across various sectors, including banking and finance, energy, retail, and telecommunications.
         </p>
@@ -327,10 +349,10 @@
         <div class="footer-content">
             <span class="footer-email">raul.paris.murillo@gmail.com</span>
             <div class="footer-links">
-                <a href="https://github.com/yourusername" target="_blank">
+                <a href="https://github.com/RaulParis" target="_blank">
                     <img src="github-white.svg" alt="GitHub" style="width:24px; height:24px;">
                 </a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank">
+                <a href="https://linkedin.com/in/raul-paris/" target="_blank">
                     <img src="linkedin-white.svg" alt="LinkedIn" style="width:24px; height:24px;">
                 </a>
             </div>
@@ -341,5 +363,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.5/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/appHome.js"></script>
 </body>
 </html>
